@@ -1,0 +1,26 @@
+consisting of following parts:
+    the part that reads the Pressed info
+    the part that reads the Released info
+    the part that groups inputs into letters
+    the part that spaces letters into groups
+    the part that translates grouped letters
+    the part that interfaces them altogether
+
+no action for 0.3 sec = every action will reset the timer that countsdown 0.3 sec
+
+After 0.5 seconds of no input action, send put a single space:
+    if there is not action for 0.5 seconds, automatically place a space in the document
+    send the group of letters 
+
+each symbol has an assigned id.
+whenever the alphabet is outputted, the id is updated to a new one.
+
+after an alphabet is outputted, create a div for the next one.
+keep including outputs to the div until an alphabet is outputted
+
+OR
+
+create a div.class whenever an alphabet is outputted
+    the contents does not have it's own div
+
+to function during keypress, make a do while loop triggered when pressing a key that is suspended when keyup
