@@ -178,7 +178,7 @@ function morseDecoder(exportGroups, attributeId){
 
 function outputScreen(letters, attr){
     
-    domManipulator(letters, "display: flex; margin:0; justify-content: center; font-size:2rem");
+    domManipulator(letters, "display: flex; margin:0; justify-content: center; font-size:2rem; font-family: cursive");
     
     updatedAttributeId = attr + 1;
     createNewDivClass(updatedAttributeId);
